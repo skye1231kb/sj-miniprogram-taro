@@ -1,0 +1,194 @@
+$color-brand: #f8b02a;
+$main-text: #333333;
+$info-text: #666666;
+$secondary-text: #999999;
+
+#app, page {
+  background-color: #f8f8f8;
+}
+
+// 表单样式
+.form-container {
+  padding: 0 30px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  .form-item {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .title {
+      flex: 0 0 240px;
+      font-size: 26px;
+      color: $main-text;
+    }
+    & > text {
+      flex: 0 0 240px;
+      font-size: 26px;
+      color: $main-text;
+    }
+    & > input,
+    & > view,
+    & > picker {
+      padding: 0;
+      flex: 1 1 auto;
+      font-size: 26px;
+      color:$secondary-text;
+    }
+    radio {
+      & + text {
+        margin-right: 24px;
+      }
+    }
+    radio:not(:last-child) {
+      margin-right: 24px;
+    }
+    .input-placeholder {
+      font-size: 26px;
+      color: $secondary-text;
+    }
+    .code-btn {
+      flex: 0 0 196px;
+      height: 60px;
+      line-height: 60px;
+      border-radius: 30px;
+      background: linear-gradient(to right, #ffcf5d, #ffbe2b);
+      font-size: 24px;
+      border: none;
+      color: $main-text;
+      &::after {
+        border: none;
+      }
+    }
+    .icon {
+      flex: 0 0 85px;
+      height: 44px;
+    }
+    .content {
+      flex: 1 1 auto;
+    }
+    &.selection::after {
+      content: '';
+      width: 11px;
+      height: 18px;
+      background: url("./static/img/index/arrow_right_2.png") no-repeat center/11px 18px;
+    }
+  }
+}
+
+// 底部按钮样式
+.btn-container {
+  position: relative;
+  margin-top: 72px;
+  .btn {
+    margin: 0 auto;
+    width: 554px;
+    height: 78px;
+    line-height: 78px;
+    border-radius: 39px;
+    background: #f3ac2e;
+    color: #FFFFFF;
+    font-size: 36px;
+    border: none;
+    outline: none;
+    &::after {
+      border: none;
+    }
+  }
+}
+
+// 优惠券列表样式
+.coupon-list-container {
+  padding: 24px 30px;
+  height: calc(100vh - 184px);
+  background: #ffffff;
+  box-sizing: border-box;
+  .coupon-item {
+    position: relative;
+    padding: 0 30px;
+    height: 202px;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+    .coupon-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 690px;
+      height: 202px;
+      z-index: 1;
+    }
+    .coupon-desc {
+      position: absolute;
+      left: 30px;
+      right: 30px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      z-index: 2;
+      &.failure {
+        color: $info-text;
+        .date {
+          color: $secondary-text;
+        }
+        .right {
+          background-color: transparent;
+        }
+      }
+      .left {
+        display: flex;
+        align-items: center;
+        .denomination-container {
+          margin-right: 108px;
+          &.discount {
+            margin: 0 127px 0 20px;
+          }
+          .denomination {
+            font-size: 72px;
+            .symbol {
+              font-size: 28px;
+            }
+          }
+          .condition {
+            font-size: 26px;
+          }
+        }
+        .desc-container {
+          .name {
+            font-size: 30px;
+          }
+          .scope {
+            margin-bottom: 24px;
+            font-size: 20px;
+          }
+          .date {
+            font-size: 20px;
+          }
+        }
+      }
+      .right {
+        width: 120px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, .3);
+        border-radius: 5px;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+// 分割线
+.separated {
+  width: 2px;
+  height: 84px;
+  background-color: #d8d8d8;
+}
+
+@import '../node_modules/taro-ui/dist/style/index.scss';

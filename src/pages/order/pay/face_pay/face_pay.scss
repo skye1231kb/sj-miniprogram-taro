@@ -1,0 +1,93 @@
+page {
+  background: #ffffff;
+}
+.face-pay {
+  .banner-container {
+    width: 100%;
+    height: 300px !important;
+    .banner {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  .remake {
+    padding: 30px 0;
+    font-size: 26px;
+    color: #999999;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  .form-container {
+    padding: 0 40px;
+    box-sizing: border-box;
+    .form-item {
+      border-bottom: 1px solid #f0f0f0;
+      &.date {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        .icon {
+          flex: 0 0 auto;
+          margin: 0 30px 0 10px;
+          width: 58px;
+          height: 51px;
+          background: url(../../../../static/img/index/train/date.png) no-repeat center/38px 37px;
+          vertical-align: middle;
+        }
+        .content {
+          font-size: 32px;
+          color: #333333;
+        }
+      }
+      &.train {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        .icon {
+          flex: 0 0 auto;
+          display: inline-block;
+          margin: 0 30px 0 10px;
+          width: 58px;
+          height: 54px;
+          background: url(../../../../static/img/index/train/train.png) no-repeat center/40px 43px;
+          vertical-align: middle;
+        }
+        .content {
+          font-size: 32px;
+          color: #333333;
+          &.placeholder {
+            color: #999999;
+          }
+        }
+        .scan-icon {
+          margin-right: 10px;
+          width: 38px;
+          height: 35px;
+          background: url(../../../../static/img/index/train/scan_icon.png) no-repeat center/38px 35px;
+          vertical-align: middle;
+        }
+      }
+      &.amount {
+        display: flex;
+        align-items: center;
+        padding: 30px 0;
+        .icon {
+          flex: 0 0 auto;
+          margin: 0 30px 0 10px;
+          width: 58px;
+          height: 51px;
+          background: url(../../../../static/img/index/train/amount.png) no-repeat center/38px 43px;
+        }
+        & > input {
+          font-size: 32px;
+          color: #333333;
+        }
+        .amount-placeholder {
+          font-size: 32px;
+          color: #999999;
+        }
+      }
+    }
+  }
+}

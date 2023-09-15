@@ -1,0 +1,52 @@
+.invoice {
+  padding: 0 30px 100px;
+  font-size: 26px;
+  color: #999;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    .title {
+      margin-right: 34px;
+    }
+    .choose-title {
+      padding: 10px 30px;
+      font-size: 26px;
+      color: #fff;
+      background-color: #f3ac2e;
+      border-radius: 5px;
+    }
+    .btn {
+      display: inline-block;
+      margin-right: 34px;
+      width: 152px;
+      height: 54px;
+      line-height: 54px;
+      font-size: 26px;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+      vertical-align: middle;
+      border: none;
+      &::after {
+        border: none;
+      }
+      &.active {
+        color: #f3ac2e;
+        &::after {
+          border: 1px solid #f3ac2e;
+        }
+      }
+    }
+  }
+  .module-title {
+    padding: 24px 30px;
+  }
+  .input-placeholder {
+    color: #333;
+  }
+  .btn-container {
+    margin-top: 100px;
+  }
+}

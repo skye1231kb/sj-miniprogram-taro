@@ -1,0 +1,69 @@
+.common {
+  font-size: 28px;
+  color: #666666;
+  .common-menu-list {
+    margin: 30px 0;
+    padding: 30px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 34px;
+      font-weight: bold;
+      color: #333333;
+      &::before {
+        display: inline-block;
+        content: '';
+        margin-right: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+      }
+      &.title-1::before {
+        width: 28px;
+        height: 24px;
+        background-image: url(../../../static/img/index/common/ticket.png);
+        background-size: 28px 24px;
+      }
+      &.title-2::before {
+        width: 28px;
+        height: 24px;
+        background-image: url(../../../static/img/index/common/refund.png);
+        background-size: 28px 24px;
+      }
+      &.title-3::before {
+        width: 26px;
+        height: 31px;
+        background-image: url(../../../static/img/index/common/luggage.png);
+        background-size: 28px 24px;
+      }
+      &.title-4::before {
+        width: 29px;
+        height: 22px;
+        background-image: url(../../../static/img/index/common/name.png);
+        background-size: 28px 24px;
+      }
+      &.title-5::before {
+        width: 28px;
+        height: 33px;
+        background-image: url(../../../static/img/index/common/train.png);
+        background-size: 28px 24px;
+      }
+    }
+    .subtitle {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      &::before {
+        margin-right: 12px;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #666666;
+      }
+    }
+  }
+}

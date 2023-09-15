@@ -1,0 +1,91 @@
+.history {
+  padding: 0 30px;
+  .cate-title {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 6px;
+      height: 32px;
+      background: linear-gradient(0deg, #6095ff, #25b4ff);
+      border-radius: 2px;
+    }
+    .cate {
+      margin-left: 24px;
+      font-size: 32px;
+      color: #333333;
+    }
+    .date {
+      margin-left: 20px;
+      font-size: 24px;
+      color: #999999;
+    }
+  }
+  .travel-container {
+    margin-top: 24px;
+    padding: 36px 0;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 #f0f0f0;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+      padding: 0 30px;
+      font-size: 24px;
+      .travel-time {
+        color: #999999;
+        &::before {
+          display: inline-block;
+          margin-right: 15px;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background: url("../../../static/img/travel/time_icon.png") no-repeat center/20px;
+        }
+      }
+    }
+    .station-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      & > view {
+        flex: 1;
+      }
+      .station {
+        color: #333333;
+        .name {
+          font-size: 42px;
+        }
+        .time {
+          margin-top: 16px;
+          font-size: 36px;
+        }
+      }
+      .train {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .code {
+          font-size: 32px;
+          color: #333333;
+        }
+        .arrow-icon {
+          width: 229px;
+          height: 29px;
+          background: url("../../../static/img/travel/arrow_icon.png") no-repeat center/229px 29px;
+        }
+        .type {
+          margin-top: 16px;
+          font-size: 26px;
+          color: #666666;
+        }
+      }
+    }
+  }
+}

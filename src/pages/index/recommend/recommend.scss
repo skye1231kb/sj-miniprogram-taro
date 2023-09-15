@@ -1,0 +1,56 @@
+.pro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #333333;
+  box-sizing: border-box;
+  .pro-item {
+    margin-bottom: 18px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    .pro-pic {
+      width: 336px;
+      height: 252px;
+    }
+    .content {
+      padding: 34px 18px;
+      .name {
+        max-width: 300px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .price {
+        font-size: 32px;
+        font-weight: bold;
+        .discount {
+          display: inline-block;
+          margin-left: 12px;
+          font-size: 20px;
+          color: #fb4e44;
+          font-weight: normal;
+          &::before {
+            display: inline-block;
+            content: '';
+            margin-right: 4px;
+            width: 18px;
+            height: 18px;
+            background: url(../../static/img/index/discount.png) no-repeat center/18px;
+          }
+        }
+      }
+      .num {
+        font-size: 22px;
+        color: #999999;
+      }
+    }
+  }
+}

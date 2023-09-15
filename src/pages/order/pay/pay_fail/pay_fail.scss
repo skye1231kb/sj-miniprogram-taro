@@ -1,0 +1,50 @@
+.pay-fail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f6f6;
+  .fail-icon {
+    margin-top: 148px;
+    width: 318px;
+    height: 248px;
+  }
+  .tip {
+    margin: 66px 0 90px;
+    color: #333;
+    font-size: 30px;
+  }
+  .btn {
+    display: inline-block;
+    margin-bottom: 42px;
+    width: 250px;
+    height: 78px;
+    line-height: 78px;
+    font-size: 36px;
+    border-radius: 39px;
+    &.order {
+      margin-right: 42px;
+      color: #999;
+      border: 1px solid #999;
+      &::after {
+        border: none;
+      }
+    }
+    &.pay {
+      color: #FFFFFF;
+      background: #f3ac2e;
+      border: none;
+      &::after {
+        border: none;
+      }
+    }
+  }
+  .active-container {
+    width: 690px;
+    height: 200px;
+    .active-pic {
+      width: 690px;
+      height: 200px;
+    }
+  }
+}

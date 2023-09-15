@@ -1,0 +1,19 @@
+.service-container {
+  position: absolute;
+  right: 40px;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+  width: 46px;
+  height: 38px;
+  z-index: 30;
+  background-color: transparent;
+  line-height: 1.5;
+  &::after {
+    border: none;
+  }
+  & > image {
+    width: 46px;
+    height: 38px;
+  }
+}

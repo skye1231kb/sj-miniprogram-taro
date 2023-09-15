@@ -1,0 +1,114 @@
+page {
+  height: 100vh;
+  padding-bottom: 294px;
+  background-color: #f5f5f5;
+}
+.site {
+  .active-container {
+    width: 100%;
+    height: 200px;
+    .active-pic {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .site-and-train {
+    padding: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    border-top: 1px solid #f5f5f5;
+    background: #fff;
+  }
+  .site-container {
+    padding: 30px;
+    width: auto;
+    height: calc(100vh - 234px);
+    overflow: hidden;
+    &.has-active {
+      height: calc(100vh - 434px);
+    }
+    .site-list {
+      margin-bottom: 111px;
+      .site-item {
+        display: inline-block;
+        position: relative;
+        width: 267px;
+        color: #999;
+        &.hide {
+          visibility: hidden;
+        }
+        &:last-child {
+          width: 156px;
+          .arrow {
+            &.lower-arrow {
+              left: 50%;
+            }
+          }
+        }
+        .arrow {
+          position: absolute;
+          width: 55px;
+          height: 32px;
+          &.left-arrow {
+            right: 27.5px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &.right-arrow {
+            left: -83px;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+          }
+          &.lower-arrow {
+            top: -71.5px;
+            left: 30%;
+            transform-origin: 27.5px 16px;
+            transform: translateX(-50%) rotate(-90deg);
+          }
+        }
+        .content {
+          width: 156px;
+          height: 105px;
+          line-height: 105px;
+          background-color: #fff;
+          text-align: center;
+          font-weight: bold;
+          &.active {
+            background-color: #fff6e5;
+            .site-name {
+              color: #f3ac2e;
+            }
+          }
+          &.via {
+            background-color: #f3ac2e;
+            .site-name {
+              color: #FFFFFF;
+            }
+          }
+          &.active.via {
+            background-color: #f3ac2e;
+          }
+          .site-name {
+            display: block;
+            font-size: 32px;
+            color: #d1d1d1;
+          }
+          .site-date {
+            display: block;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+  .btn-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 72px 0 144px 0;
+    width: 100%;
+    z-index: 10;
+  }
+}

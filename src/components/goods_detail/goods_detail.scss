@@ -1,0 +1,135 @@
+.goods-detail-container {
+  position: fixed;
+  bottom: -150vh;
+  left: 0;
+  background-color: #f8f8f8;
+  z-index: 800;
+  opacity: 0;
+  transition: all .5s;
+  &.show {
+    bottom: 0;
+    opacity: 1;
+  }
+  .goods-detail {
+    position: relative;
+    padding-bottom: 98px;
+    width: 100vw;
+    height: 100vh;
+    .goods-detail-banner {
+      position: relative;
+      width: 100vw;
+      height: 562px;
+      background-color: #f5f5f5;
+      & > image {
+        width: 100vw;
+        height: 562px;
+      }
+      .down-icon {
+        position: absolute;
+        right: 30px;
+        top: 110px;
+        width: 56px;
+        height: 56px;
+      }
+    }
+    .goods-detail-title {
+      position: relative;
+      padding: 30px;
+      background-color: #fff;
+      .goods-name {
+        margin-bottom: 12px;
+        color: #333;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .goods-desc {
+        margin-bottom: 20px;
+        color: #999;
+        font-size: 20px;
+        & > text:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+      .price {
+        color: #f95132;
+        font-size: 28px;
+        font-weight: bold;
+        & > text {
+          font-size: 46px;
+        }
+        .discount {
+          display: inline-block;
+          margin-left: 12px;
+          font-size: 20px;
+          color: #fb4e44;
+          font-weight: normal;
+          &::before {
+            display: inline-block;
+            content: '';
+            margin-right: 4px;
+            width: 18px;
+            height: 18px;
+            background: url(../../static/img/index/discount.png) no-repeat center/18px;
+          }
+        }
+      }
+      .btn-container {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        .add-cart {
+          width: 230px;
+          height: 60px;
+          line-height: 60px;
+          border-radius: 30px;
+          color: #333;
+          font-size: 26px;
+          background: linear-gradient(to right, #ffbe2b, #ffcf5d);
+          &::after {
+            border: none;
+          }
+        }
+        .add-cart-icon {
+          margin-right: 6px;
+          width: 24px;
+          height: 24px;
+        }
+        .btn {
+          width: 44px;
+          height: 44px;
+          vertical-align: middle;
+        }
+        .number {
+          margin: 0 22px;
+          vertical-align: middle;
+        }
+      }
+    }
+    .goods-detail-content {
+      margin-top: 24px;
+      padding: 30px;
+      background-color: #fff;
+      .title {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .content-item {
+        font-size: 28px;
+        color: #999;
+        & > view:not(:last-child) {
+          margin-bottom: 12px;
+        }
+      }
+    }
+    .cart-bar-container {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 801;
+    }
+  }
+}

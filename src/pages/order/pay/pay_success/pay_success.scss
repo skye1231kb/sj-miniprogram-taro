@@ -1,0 +1,72 @@
+.pay-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f6f6f6;
+  .success-icon {
+    margin-top: 148px;
+    width: 318px;
+    height: 248px;
+  }
+  .tip {
+    margin: 66px 0 12px;
+    color: #333;
+    font-size: 36px;
+  }
+  .sub-tip {
+    margin-bottom: 58px;
+    font-size: 24px;
+    color: #999999;
+  }
+  .pay-info {
+    margin-bottom: 66px;
+    text-align: left;
+    font-size: 30px;
+    color: #333333;
+    .price {
+      margin-bottom: 18px;
+      & > text {
+        color: #f95132;
+      }
+    }
+    .time {
+      & > text {
+        color: #999999;
+      }
+    }
+  }
+  .btn {
+    display: inline-block;
+    margin-bottom: 42px;
+    width: 250px;
+    height: 78px;
+    line-height: 78px;
+    font-size: 36px;
+    border-radius: 39px;
+    &.back {
+      margin-right: 42px;
+      color: #999;
+      border: 1px solid #999;
+      &::after {
+        border: none;
+      }
+    }
+    &.order {
+      color: #FFFFFF;
+      background: #f3ac2e;
+      border: none;
+      &::after {
+        border: none;
+      }
+    }
+  }
+  .active-container {
+    width: 690px;
+    height: 200px;
+    .active-pic {
+      width: 690px;
+      height: 200px;
+    }
+  }
+}

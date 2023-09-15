@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+  align-items: center;
+  .nav {
+    width: 225px;
+    height: 225px;
+    line-height: 225px;
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    background-color: #006699;
+  }
+}

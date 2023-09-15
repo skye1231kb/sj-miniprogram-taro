@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "shejian_xcx",
+  "description": "舌尖上de旅途",
+  "appid": "wx16644baa9a6a348b",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": true
+  },
+  "compileType": "miniprogram"
+}

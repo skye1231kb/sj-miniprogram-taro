@@ -1,0 +1,141 @@
+.video {
+  width: 100%;
+  height: 100vh;
+}
+.bottom-menu {
+  width: 100%;
+  height: 280px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #666;
+  padding: 20px 40px;
+  .video-title {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+  }
+  .button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .praise,
+  .comment {
+    @extend .share;
+    border-radius: 10px;
+    text-align: center;
+    &.active {
+      background: #fd66a3;
+    }
+  }
+
+  .goods {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    line-height: 100px;
+  }
+  .share {
+    background: #6ac;
+    width: 80px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 60px;
+    color: #fff;
+    padding: 0;
+    margin: 10px 10px;
+  }
+}
+
+.play-btn {
+  color: #ffffff;
+  text-shadow: 0 4px #999;
+  font-size: 40px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comment-box {
+  height:1200px;
+  width: 100%;
+  position: fixed;
+  padding: 20px 0;
+  bottom: -1200px;
+  left: 0;
+  box-sizing: border-box;
+  background: rgba(0,39,72, 0.9);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: all 0.2s;
+  .comment-content {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .comment-input {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border: 0;
+    background: rgba(255, 255, 255, 0.4);
+    color: #fff;
+    flex: 1;
+    margin-right: 20px;
+  }
+  .comment-input-placeholder {
+    color: #aaa;
+  }
+  .comment-list{
+    padding: 0 30px;
+  }
+  .comment-item {
+    color: #FFF;
+    display: block;
+    margin-top: 30px;
+  }
+  &.active {
+    bottom: 0;
+  }
+  .comment-submit {
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background: #6ac;
+  }
+  .close-comment{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 16px;
+    color: #FFF;
+  }
+}

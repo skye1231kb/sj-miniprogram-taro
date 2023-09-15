@@ -1,0 +1,76 @@
+.detail {
+  padding-bottom: 162px;
+  &.exchange {
+    padding-bottom: 98px;
+  }
+  .banner-container {
+    width: 750px;
+    height: 560px;
+    background-color: #fefefe;
+    .coupon-banner {
+      width: 750px;
+      height: 560px;
+    }
+  }
+  .content {
+    margin-bottom: 24px;
+    padding: 24px 30px;
+    font-size: 26px;
+    background-color: #ffffff;
+    .integral {
+      color: #ff9c3b;
+      .num {
+        font-weight: bold;
+        font-size: 48px;
+      }
+    }
+    .desc {
+      color: #333333;
+      font-weight: bold;
+    }
+  }
+  .btn-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 42px 0;
+    background-color: #ffffff;
+  }
+  .bottom-btn-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    height: 98px;
+    color: #333333;
+    font-size: 26px;
+    background-color: #ffffff;
+    box-shadow: 0 -1px 3px 3px #f1f1f1;
+    .amount {
+      .balance {
+        font-size: 22px;
+        color: #999999;
+        &.lack {
+          color: #f95132;
+        }
+      }
+    }
+    .btn {
+      width: 220px;
+      height: 98px;
+      line-height: 98px;
+      text-align: center;
+      font-size: 30px;
+      background-color: #ffd128;
+      &.disabled {
+        background-color: #999999;
+        color: #ffffff;
+      }
+    }
+  }
+}

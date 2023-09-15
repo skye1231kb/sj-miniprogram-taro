@@ -1,0 +1,196 @@
+.index {
+  padding: 0 30px;
+  .cate-title {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    &::before {
+      display: inline-block;
+      content: '';
+      width: 6px;
+      height: 32px;
+      background: linear-gradient(0deg, #6095ff, #25b4ff);
+      border-radius: 2px;
+    }
+    .cate {
+      margin-left: 24px;
+      font-size: 32px;
+      color: #333333;
+    }
+    .date {
+      margin-left: 20px;
+      font-size: 24px;
+      color: #999999;
+    }
+  }
+  .travel-container {
+    margin-top: 24px;
+    padding: 36px 0;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 #f0f0f0;
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+      padding: 0 30px;
+      font-size: 24px;
+      .travel-time {
+        color: #999999;
+        &::before {
+          display: inline-block;
+          margin-right: 15px;
+          content: '';
+          width: 20px;
+          height: 20px;
+          background: url("../../static/img/travel/time_icon.png") no-repeat center/20px;
+        }
+      }
+      .lave-time {
+        padding: 0 10px;
+        min-width: 104px;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid #0196ff;
+        color: #0196ff;
+        border-radius: 20px 20px 0 20px;
+      }
+    }
+    .station-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+      text-align: center;
+      & > view {
+        flex: 1;
+      }
+      .station {
+        color: #333333;
+        .name {
+          font-size: 42px;
+          font-weight: bold;
+        }
+        .time {
+          margin-top: 16px;
+          font-size: 36px;
+        }
+      }
+      .train {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .code {
+          font-size: 32px;
+          color: #333333;
+        }
+        .arrow-icon {
+          width: 229px;
+          height: 29px;
+          background: url("../../static/img/travel/arrow_icon.png") no-repeat center/229px 29px;
+        }
+        .type {
+          margin-top: 16px;
+          font-size: 26px;
+          color: #666666;
+        }
+      }
+    }
+    .travel-service {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 30px 0;
+      border-top: 1px dashed #dddddd;
+      & > view {
+        flex: 1;
+      }
+      .name {
+        margin-bottom: 16px;
+        font-size: 26px;
+        color: #999999;
+      }
+      .ticket-gate {
+        text-align: left;
+        .content {
+          display: -webkit-box;
+          font-size: 28px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+      }
+      .seat {
+        text-align: center;
+        font-size: 28px;
+      }
+      .operation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #dddddd;
+        .delete {
+          width: 32px;
+          height: 32px;
+          background: url("../../static/img/travel/delete_icon.png") no-repeat center/32px;
+        }
+      }
+    }
+  }
+  .add-icon {
+    position: fixed;
+    right: 25px;
+    bottom: 118px;
+    width: 110px;
+    height: 110px;
+    background: url("../../static/img/travel/add_icon.png") no-repeat center/110px;
+    z-index: 50;
+  }
+  .no-travel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 160px;
+    .no-travel-pic {
+      width: 448px;
+      height: 278px;
+    }
+    .tip {
+      margin-top: 60px;
+      font-size: 32px;
+      color: #333333;
+    }
+    .sub-tip {
+      margin-top: 24px;
+      font-size: 28px;
+      color: #666666;
+    }
+    .add-btn {
+      margin-top: 250px;
+      width: 640px;
+      height: 88px;
+      line-height: 88px;
+      border-radius: 16px;
+      color: #FFFFFF;
+      background: #0196ff;
+      text-align: center;
+    }
+  }
+  .history {
+    margin: 92px 0;
+    font-size: 26px;
+    color: #999999;
+    text-align: center;
+    &::after {
+      display: inline-block;
+      content: '';
+      width: 28px;
+      height: 28px;
+      background: url("../../static/img/travel/go_to_icon.png") no-repeat center/28px;
+      vertical-align: middle;
+    }
+  }
+}

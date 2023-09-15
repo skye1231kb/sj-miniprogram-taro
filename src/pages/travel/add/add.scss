@@ -1,0 +1,126 @@
+.add {
+  .tab-container {
+    display: flex;
+    padding: 20px 30px 0;
+    height: 96px;
+    line-height: 96px;
+    .tab-item {
+      flex: 1;
+      text-align: center;
+      font-size: 30px;
+      color: #333333;
+      &.left.active {
+        background: url("../../../static/img/travel/tab_left.png") no-repeat center/100% 96px;
+      }
+      &.right.active {
+        background: url("../../../static/img/travel/tab_right.png") no-repeat center/100% 96px;
+      }
+    }
+  }
+  .content-container {
+    padding: 64px 30px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    .content-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 64px;
+      border-bottom: 1px solid #efefef;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .name {
+        margin-bottom: 32px;
+        font-size: 32px;
+        color: #909090;
+      }
+      .input {
+        padding-bottom: 22px;
+        font-size: 40px;
+        font-weight: bold;
+        & > text {
+          margin-right: 32px;
+        }
+        .today {
+          color: #0196ff;
+        }
+        &.placeholder {
+          font-weight: normal;
+          color: #c3c3c3;
+        }
+      }
+      .train {
+        flex: 1;
+        border-bottom: 1px solid #efefef;
+      }
+      .station {
+        .title {
+          margin-bottom: 28px;
+          font-size: 32px;
+          color: #c3c3c3;
+        }
+        .name {
+          font-size: 48px;
+          color: #323232;
+          font-weight: bold;
+        }
+      }
+      .switch-icon {
+        width: 80px;
+        height: 80px;
+      }
+      .scan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 26px;
+        color: #999999;
+        .scan-icon {
+          margin-bottom: 20px;
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+    .history {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 30px;
+      padding: 22px 0;
+      .history-container {
+        .history-item {
+          display: inline-block;
+          margin-right: 32px;
+          padding: 0 10px;
+          height: 64px;
+          line-height: 64px;
+          color: #999999;
+          font-size: 28px;
+          background: #f8f8f8;
+          border-radius: 8px;
+        }
+      }
+      .reset {
+        font-size: 28px;
+        color: #aebac3;
+        padding-left: 10px;
+        border-left: 1px solid #e5e5e5;
+      }
+    }
+  }
+  .travel-btn {
+    margin: 0 auto;
+    width: 690px;
+    height: 88px;
+    line-height: 88px;
+    color: #ffffff;
+    border-radius: 16px;
+    background: #0095ff;
+    border: none;
+    &:after {
+      border: none;
+    }
+  }
+}
